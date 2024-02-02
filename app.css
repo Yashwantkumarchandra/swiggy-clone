@@ -1,3 +1,37 @@
-#heading{
-    color: blue;
+.logo img{
+    height: 100px;
+    width: 100px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+ul {
+   
+    display: flex;
+    justify-content: space-between;
+}
+ul li{
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
+
+.cardContainer img{
+    height: 100px;
+    width: 100px;
+}
+
+.cardContainer {
+    display: flex;
+}
+.cardContainer div{
+    border: 1px solid black;
+}
+
+.resCard{
+    border: 1px solid black;
 }
