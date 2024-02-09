@@ -5,23 +5,25 @@
   "main": "app.js",
   "scripts": {
     "start": "parcel index.html",
-    "build":"parcel build index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "author": "yash",
   "license": "ISC",
   "devDependencies": {
+    "buffer": "^6.0.3",
     "parcel": "^2.11.0",
     "process": "^0.11.10"
   },
   "dependencies": {
+    "axios": "^1.6.7",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0"
   },
-
-  "browserlist":[
+  "browserlist": [
     "last 10 versions"
   ]
- 
-
 }
