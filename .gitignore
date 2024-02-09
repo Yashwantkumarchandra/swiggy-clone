@@ -2,7 +2,5 @@
 /dist
 .parcel-cache
 
-useOnlineStatus.jsx
-useRestaurentMenu.jsx
 Grocery.jsx
 
