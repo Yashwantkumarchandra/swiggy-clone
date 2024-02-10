@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import RestaurentCard from "./RestaurentCard";
+import RestaurentCard, { withPromotedLabel } from "./RestaurentCard";
 import axios from "axios";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "../Utils/useOnlineStatus";
@@ -11,6 +11,7 @@ const Body = () => {
     const dataFetch = await axios.get(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.4699254&lng=78.4311401&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
+
     setTopRated(
       dataFetch?.data?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants

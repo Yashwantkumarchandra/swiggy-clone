@@ -1,7 +1,7 @@
 import { IMG_URL } from "../Utils/Constants";
 
-const MenuItems = (props) => {
-  const menuContent = props.menuHighlights;
+const MenuItems = ({ menuHighlights, imageDefault }) => {
+  const menuContent = menuHighlights;
   console.log(menuContent);
 
   return (
@@ -24,7 +24,7 @@ const MenuItems = (props) => {
                     aria-expanded="false"
                     aria-controls={`#flush-collapse-${index}`}
                   >
-                    {item.card.card.title}
+                    {item.card.card.title} ({item.card.card.itemCards.length})
                   </button>
                 </h2>
                 <div
@@ -36,11 +36,19 @@ const MenuItems = (props) => {
                     <div className="card" key={items.card.info.id}>
                       <div className="row card-body">
                         <div className="col-10 d-flex ">
-                          <img
-                            src={IMG_URL + items.card.info.imageId}
-                            className="img-fluid rounded-start "
-                            style={{ width: "8rem", height: "8rem" }}
-                          />
+                          {items.card.info.imageId === undefined ? (
+                            <img
+                              src={IMG_URL + imageDefault}
+                              className="img-fluid rounded-start "
+                              style={{ width: "8rem", height: "8rem" }}
+                            />
+                          ) : (
+                            <img
+                              src={IMG_URL + items.card.info.imageId}
+                              className="img-fluid rounded-start "
+                              style={{ width: "8rem", height: "8rem" }}
+                            />
+                          )}
                           <div className="accordion-body card-title">
                             {items.card.info.name}
                             <div className="card-text">

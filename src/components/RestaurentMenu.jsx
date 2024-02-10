@@ -31,7 +31,7 @@ const RestaurentMenu = () => {
   return (
     <div className="card">
       <div className="row  shadow-lg">
-        <div className="col-lg-8 offset-lg-1 row ">
+        <div className="col-lg-10 row ">
           <div className="col-md-10  d-flex">
             <div className="">
               <img
@@ -62,7 +62,10 @@ const RestaurentMenu = () => {
           </div>
         </div>
       </div>
-      <MenuItems menuHighlights={menuItemsFilter} />
+      <MenuItems
+        menuHighlights={menuItemsFilter}
+        imageDefault={cloudinaryImageId}
+      />
     </div>
   );
 };
