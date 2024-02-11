@@ -22,8 +22,6 @@ const About = () => {
     },
   ];
 
-  //
-
   return (
     <div>
       <h1 className="ms-5">FAQ:-</h1>

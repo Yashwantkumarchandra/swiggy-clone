@@ -1,11 +1,14 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import RestaurentCard, { withPromotedLabel } from "./RestaurentCard";
 import axios from "axios";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "../Utils/useOnlineStatus";
+import UserContext from "../Utils/UserContext";
 
 const Body = () => {
   const [topRated, setTopRated] = useState([]);
+
+  const { loggedInUser, setUserInfo } = useContext(UserContext);
 
   const swiggyApi = async () => {
     const dataFetch = await axios.get(
@@ -60,6 +63,14 @@ const Body = () => {
         <button className="search btn btn-warning" onClick={filter}>
           Top rated Restaurent
         </button>
+        <div>
+          <input
+            type="text"
+            className="form-control w-auto m-1"
+            onChange={(e) => setUserInfo(e.target.value)}
+            value={loggedInUser}
+          />
+        </div>
       </div>
       <div className="d-flex justify-content-center">
         <RestaurentCard allRestaurent={topRated} />
