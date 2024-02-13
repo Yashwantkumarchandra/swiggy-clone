@@ -100,6 +100,7 @@ super(props);
 
 render() {
 return (
+
 <div>
 <h1>This is About class component</h1>
 <UserClass />
@@ -109,3 +110,55 @@ return (
 }
 
 export default About;
+
+# usase of useContext
+
+import myApp from "./src/Utils/ThemeContext";
+
+import { createContext, useContext, useState } from "react";
+
+const ThemeContext = createContext("light");
+
+export default function myApp() {
+const [theme, setTheme] = useState("light");
+return (
+<>
+<ThemeContext.Provider value={theme}>
+<Form />
+</ThemeContext.Provider>
+<Button onClick={() => (setTheme = "light" ? "dark" : "light")}>
+Change Theme
+</Button>
+</>
+);
+}
+
+function Form() {
+return (
+<Panel title="Welcome">
+<Button>Sign Up</Button>
+<Button>Sign Up</Button>
+</Panel>
+);
+}
+
+function Panel({ title, children }) {
+const theme = useContext(ThemeContext);
+const className = "panel-" + theme;
+return (
+<section className={className}>
+<h1>{title}</h1>
+{children}
+</section>
+);
+}
+
+function Button({ children, onClick }) {
+const theme = useContext(ThemeContext);
+const className = "button-" + theme;
+return (
+<button className={className} onClick={onClick}>
+{children}
+</button>
+);
+}

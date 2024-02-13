@@ -51,7 +51,16 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link">Cart</a>
+              <a className="nav-link">
+                <span className="bi bi-cart3 position-relative fs-5">
+                  <span
+                    className="position-absolute
+                   top-0 start-100 badge bg-danger translate-middle rounded-pill "
+                  >
+                    0
+                  </span>
+                </span>
+              </a>
             </li>
             <li className="nav-item">
               <button
