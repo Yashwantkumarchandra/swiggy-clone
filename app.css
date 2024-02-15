@@ -9,17 +9,6 @@
   border: 1px solid black;
 }
 
-/* ul {
-   
-    display: flex;
-    justify-content: space-between;
-}
-ul li{
-    margin: 10px;
-    padding: 10px;
-    list-style: none;
-} */
-
 /*======================
     404 page
 =======================*/
@@ -57,4 +46,8 @@ ul li{
 }
 .contant_box_404 {
   margin-top: -50px;
+}
+
+#root {
+  height: 100vh;
 }

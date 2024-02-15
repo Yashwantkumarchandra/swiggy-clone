@@ -5,12 +5,9 @@ const RestaurentCard = (props) => {
   const resData = props.allRestaurent;
 
   return (
-    <div className="cardContainer row   container">
+    <div className="cardContainer row  container">
       {resData.map((restarurent) => (
-        <div
-          className="card card-hover col-md-3 col-sm-12 "
-          key={restarurent.info.id}
-        >
+        <div className="card card-hover col-md-3  " key={restarurent.info.id}>
           <div className="card-body list-group  " key={restarurent.info.id}>
             <img
               src={IMG_URL + restarurent.info.cloudinaryImageId}

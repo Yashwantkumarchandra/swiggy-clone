@@ -3,9 +3,12 @@ import { LOGO_URL } from "../Utils/Constants";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../Utils/useOnlineStatus";
 import UserContext from "../Utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [btnLogin, setBtnLogin] = useState("Login");
+
+  const cartItems = useSelector((store) => store.cart.items);
 
   const onlineStatus = useOnlineStatus();
 
@@ -51,16 +54,16 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link">
+              <Link to="/cart" className="nav-link pe-3">
                 <span className="bi bi-cart3 position-relative fs-5">
                   <span
                     className="position-absolute
                    top-0 start-100 badge bg-danger translate-middle rounded-pill "
                   >
-                    0
+                    {cartItems.length}
                   </span>
                 </span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <button

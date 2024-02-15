@@ -1,10 +1,9 @@
 const Footer = () => {
   return (
-    <div className="  bg-body-secondary text-center p-3">
+    <div className="bg-body-secondary text-center p-3 mt-auto">
       <span className="bi bi-c-circle ">copyright 2024</span>
       <span className="bi bi-github ">
         <a href="https://github.com/Yashwantkumarchandra" className="ms-2">
-          {" "}
           yashwantkumarchandra
         </a>
       </span>
