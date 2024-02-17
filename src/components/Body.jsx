@@ -56,6 +56,7 @@ const Body = () => {
           placeholder="Search"
           type="text"
           onChange={hadnleChange}
+          data-testid="searchInput"
         />
         <button onClick={swiggyApi} className=" btn btn-success ms-2 me-2">
           All Restaurent

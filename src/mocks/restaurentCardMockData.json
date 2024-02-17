@@ -1,0 +1,73 @@
+{
+  "info": {
+    "id": "34026",
+    "name": "Vellanki Foods",
+    "cloudinaryImageId": "glexyasdebfapt2hh08w",
+    "locality": "Mothinagar",
+    "areaName": "Ameerpet",
+    "costForTwo": "₹600 for two",
+    "cuisines": ["Sweets", "Desserts"],
+    "avgRating": 4.5,
+    "parentId": "3768",
+    "avgRatingString": "4.5",
+    "totalRatingsString": "5K+",
+    "sla": {
+      "deliveryTime": 29,
+      "lastMileTravel": 4.3,
+      "serviceability": "SERVICEABLE",
+      "slaString": "25-30 mins",
+      "lastMileTravelString": "4.3 km",
+      "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+      "nextCloseTime": "2024-02-17 20:30:00",
+      "opened": true
+    },
+    "badges": {
+      "textExtendedBadges": [
+        {
+          "iconId": "guiltfree/GF_Logo_android_3x",
+          "shortDescription": "options available",
+          "fontColor": "#7E808C"
+        }
+      ]
+    },
+    "isOpen": true,
+    "aggregatedDiscountInfoV2": {},
+    "type": "F",
+    "badgesV2": {
+      "entityBadges": {
+        "imageBased": {},
+        "textBased": {},
+        "textExtendedBadges": {
+          "badgeObject": [
+            {
+              "attributes": {
+                "description": "",
+                "fontColor": "#7E808C",
+                "iconId": "guiltfree/GF_Logo_android_3x",
+                "shortDescription": "options available"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "differentiatedUi": {
+      "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+      "differentiatedUiMediaDetails": {
+        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+        "lottie": {},
+        "video": {}
+      }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {}
+  },
+  "analytics": {},
+  "cta": {
+    "link": "https://www.swiggy.com/restaurants/vellanki-foods-mothinagar-ameerpet-hyderabad-34026",
+    "type": "WEBLINK"
+  }
+}

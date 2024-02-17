@@ -3,10 +3,9 @@ import { IMG_URL } from "../Utils/Constants";
 
 const RestaurentCard = (props) => {
   const resData = props.allRestaurent;
-  console.log(resData);
 
   return (
-    <div className="cardContainer row  container">
+    <div className="cardContainer row container" data-restid="resCard">
       {resData.map((restarurent) => (
         <div className="card card-hover col-md-3  " key={restarurent.info.id}>
           <div className="card-body list-group  " key={restarurent.info.id}>
