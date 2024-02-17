@@ -3,6 +3,7 @@ import { IMG_URL } from "../Utils/Constants";
 
 const RestaurentCard = (props) => {
   const resData = props.allRestaurent;
+  console.log(resData);
 
   return (
     <div className="cardContainer row  container">
